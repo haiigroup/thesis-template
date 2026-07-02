@@ -722,11 +722,11 @@
 %     Eigene Farbdefinitionen ohne die Namen des xcolor packages
 \definecolor{darkblue}{rgb}{0,0,.5}
 \definecolor{black}{rgb}{0,0,0}
+\definecolor{LinkBlue}{HTML}{1A4E8A}
 
 
 % EN: Define color of links and more
 \hypersetup{
-  % have both title and number hyperlinking to content
   linktoc=all,
   bookmarksnumbered=true,
   bookmarksopen=true,
@@ -734,13 +734,10 @@
   breaklinks=true,
   colorlinks=true,
   pdfstartview=Fit,
-  pdfpagelayout=SinglePage, % DE: Alterntaive: TwoPageRight -- zweiseitige Darstellung: ungerade Seiten rechts im PDF-Viewer - siehe auch http://tex.stackexchange.com/a/21109/9075
-  %pdfencoding=utf8, % EN: This is probably the same as passing the option "unicode" at \usepackage{hyperref}
-  filecolor=black,
-  urlcolor=black,
-  linkcolor=black,
-  citecolor=black
+  pdfpagelayout=SinglePage,
+  allcolors=LinkBlue
 }
+
 
 \ifenglish
     %\renewcommand{\sectionautorefname}{Section}
